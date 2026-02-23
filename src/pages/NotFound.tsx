@@ -23,10 +23,10 @@ const NotFound = () => {
                     </p>
 
                     <div className="flex flex-col gap-3">
-                        <Link to="/admin">
+                        <Link to="/">
                             <Button className="w-full gap-2" variant="default" size="lg">
                                 <ArrowLeft className="w-4 h-4" />
-                                Back to Dashboard
+                                Back to Portal Selection
                             </Button>
                         </Link>
                     </div>
