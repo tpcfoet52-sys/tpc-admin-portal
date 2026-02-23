@@ -1,0 +1,8 @@
+[functions.create-coordinator]
+verify_jwt = false
+
+[functions.delete-coordinator]
+verify_jwt = false
+
+[functions.list-coordinators]
+verify_jwt = false
