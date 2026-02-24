@@ -15,7 +15,7 @@ import UserManagement from "./pages/admin/UserManagement";
 import ManageTeam from "./pages/admin/ManageTeam";
 import ContentMediaDashboard from "./pages/coordinator/ContentMediaDashboard";
 import EventHospitalityDashboard from "./pages/coordinator/EventHospitalityDashboard";
-import NotFound from "./pages/NotFound";
+
 
 // Components
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -76,8 +76,9 @@ const App = () => (
             </ProtectedRoute>
           } />
 
-          {/* 404 handler */}
-          <Route path="*" element={<NotFound />} />
+
+          {/* Catch-all route redirects to home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
